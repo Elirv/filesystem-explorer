@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<a href="close_session.php">Sign off</a>
-<form class="" action="" method="post">SELECT" 
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
+
+    <h1>Welcome user</h1>
+</body>
+</html>

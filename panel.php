@@ -10,11 +10,15 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-
+<form class="" action="" method="post">SELECT" 
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
 
 <?php
+$goPrueba = "prueba.php";
 if(isset($_SESSION["user"])){
-    header("location: panel.php");
+    include_once($goPrueba);
 }else{
     header("location: inicio.php");
 }
@@ -22,9 +26,5 @@ if(isset($_SESSION["user"])){
 
 <br>
 <a href="close_session.php">Sign off</a>
-<form class="" action="" method="post">SELECT" 
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
 </body>
 </html>
