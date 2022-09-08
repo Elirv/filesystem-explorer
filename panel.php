@@ -10,14 +10,14 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-<form class="" action="" method="post">SELECT 
+<form class="" action="" method="post">SELECT" 
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
 </form>
 
 <?php
 if(isset($_SESSION["user"])){
-    echo "Correct";
+    echo "<h1>Correct</h1><p> esto es una prueba" ;
 }else{
     header("location: inicio.php");
 }
