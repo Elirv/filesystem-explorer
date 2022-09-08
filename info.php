@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +7,6 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-
-
-<?php
-if(isset($_SESSION["user"])){
-    header("location: panel.php");
-}else{
-    header("location: inicio.php");
-}
-?>
-
-<br>
 <a href="close_session.php">Sign off</a>
 <form class="" action="" method="post">SELECT" 
     <input type="file" name="fileToUpload" id="fileToUpload">
