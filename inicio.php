@@ -16,7 +16,7 @@
     <main class="form-signin w-100 m-auto">
 
         <form method="post" action="03.validate.php">
-            <img class="mb-4" src="./assets/img/AIT-Icono-Red@600x.png" alt="" width="80" height="80">
+            <img class="mb-4" src="./assets/img/cloudSimpsons.png" alt="" width="80" height="80">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
             <?php if (isset($_GET["msg"]) && $_GET["msg"] === "errorLogin") { ?>
                 <div class="mt-2 mb-1 alert alert-danger alert-dismissible fade show" role="alert">
@@ -37,7 +37,7 @@
             <input class="w-100 btn btn-lg btn-primary" type="submit" value="Login">
 
 
-            <p class="mt-2 mb-1 text-muted">&copy; 2017–2022</p>
+            <p class="mt-2 mb-1 text-muted">&copy; 2022</p>
 
         </form>
     </main>
