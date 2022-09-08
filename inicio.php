@@ -26,8 +26,8 @@
             <?php } ?>
 
             <div class="form-floating">
-                <input type="text" name="user" class="form-control" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input type="text" name="user" class="form-control" placeholder="user">
+                <label for="floatingInput">User</label>
             </div>
             <div class="form-floating">
                 <input type="password" name="pwd" class="form-control" placeholder="Password">
