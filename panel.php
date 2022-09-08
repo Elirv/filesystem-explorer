@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +10,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="" action="" method="post">SELECT" 
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload Image" name="submit">
-    </form>
+    <h4>OK</h4>
+<?php
+if(isset($_SESSION["user"])){
+    echo "Correct";#aqui esta bien
+}else{
+    header("location: 02.index.php");#no tiene permiso
+}
+
+?>
+<!-- cerrar sesión -->
+<br>
+<a href="05.close_session.php">Sign off</a>
 </body>
 </html>
