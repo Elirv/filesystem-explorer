@@ -1,7 +1,3 @@
-    <form class="" action="" method="post">SELECT" 
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload Image" name="submit">
-    </form>
 <?php
 
 echo readfile("./workshop/files/example-file.txt");

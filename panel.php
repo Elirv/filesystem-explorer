@@ -10,17 +10,20 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <h4>OK</h4>
+<form class="" action="" method="post">SELECT" 
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
 <?php
 if(isset($_SESSION["user"])){
-    echo "Correct";#aqui esta bien
+    echo "Correct";
 }else{
-    header("location: 02.index.php");#no tiene permiso
+    header("location: inicio.php");
 }
-
 ?>
-<!-- cerrar sesión -->
+
 <br>
-<a href="05.close_session.php">Sign off</a>
+<a href="close_session.php">Sign off</a>
 </body>
 </html>
