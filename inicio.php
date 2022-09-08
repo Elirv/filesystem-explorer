@@ -26,7 +26,7 @@
             <?php } ?>
 
             <div class="form-floating">
-                <input type="email" name="user" class="form-control" placeholder="name@example.com">
+                <input type="text" name="user" class="form-control" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
