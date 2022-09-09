@@ -12,8 +12,8 @@
     <input type="search">
     <!-- <p>Welcome <?php echo "$myUser"; ?> </p> -->
     <p>Welcome <?php echo $myUser ?> </p>
-    <form class="" action="" method="post">
-    <input type="file" name="fileToUpload" id="fileToUpload">
+    <form action="" method="post">
+    <input type="file" name="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
     </form>
 </body>
