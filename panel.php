@@ -16,11 +16,12 @@ session_start();
 $goPrueba = "prueba.php";
 if(isset($_SESSION["user"])){
     include_once($goPrueba);
-    echo ""
+  
 
 }else{
     header("location: inicio.php");
 }
+
 ?>
 
 <br>
