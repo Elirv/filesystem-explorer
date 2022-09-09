@@ -11,7 +11,7 @@
 <body>
     <a href="close_session.php">Sign off</a>
     <input type="search">
-    <h1>Welcome user</h1>
+    <!-- <p>Welcome <?php echo "$myUser"; ?> </p> -->
     <form class="" action="" method="post">
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
