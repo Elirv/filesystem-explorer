@@ -38,7 +38,7 @@
 
 <?php
 
-$msg = NULL;
+$msg = null;
 
 if(isset($_POST["escribir"])){
     $nombre = htmlspecialchars($_POST["nombre"]);
