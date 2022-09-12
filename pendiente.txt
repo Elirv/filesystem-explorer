@@ -1,0 +1,14 @@
+
+Directorios
+1. Mostrar iconos directorios
+2. Navegar por los directorios
+3. Renombrar directorios
+4. Elminar
+
+Archivos
+1. Mostrar iconos archivos
+2. Navegar por los archivos
+3. Renombrar archivos
+4. Elminar archivos
+
+
