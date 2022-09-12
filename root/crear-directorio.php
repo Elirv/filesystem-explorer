@@ -21,6 +21,25 @@ if(isset($_POST["directorio"])){
     }
 }
 
+
+// session_start();
+// //Receive image data
+// $archivo = $_FILES['fileToUpload'] ['tmp_name'];
+// $nombre = $_FILES['fileToUpload'] ['name'];
+// $tipo = $_FILES['fileToUpload'] ['type'];
+// $tamano = $_FILES['fileToUpload'] ['size'];
+
+// $destino = "root/" . $nombre;
+
+// $subido = move_uploaded_file($archivo, $destino);
+
+// if($subido){
+//     echo "subido exitosamente <br/>";
+//     echo "<img src='root/" . $nombre ."'>";
+// }else{
+//     echo "no subido";
+// }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +67,35 @@ if(isset($_POST["directorio"])){
     </table>
 
     </form>
+        <!-- <a href="close_session.php">Sign off</a>
+    <input type="search">
+    <!-- <p>Welcome <?php echo "$myUser"; ?> </p> -->
+    <!-- <p>Welcome</p> -->
+
+    <!-- <form class="" action="datosImg.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit"> --> -->
+    </form>
+
+
+
+
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<?php
+
+
+
+?>
+

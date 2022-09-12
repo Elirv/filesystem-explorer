@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    flex: 33.33%;
+}
+
+.contenedor1{
+    flex: 100%;
+    border-: black, solid, 1px;
+    background-color: red;
+}
