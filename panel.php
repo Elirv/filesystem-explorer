@@ -13,22 +13,23 @@ session_start();
 </head>
 <body>
     <header class="header"> 
-        <a href="">User Panel</a>
+        <img class="logoPanel" src="./assets/img/cloudSimpsons.png" alt="" width="60" height="60">
         <div class="logout">
-         <a href="" class="btn btn-primary">Logout</a>
+         <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
     </header>
 
     <aside>
+        
+        
         <ul>
+           
             <li>
-                <a href="">a</a>
+                <a href=""><?php include_once "ficheros/crear-directorio.php";?></a>
             </li>
+            
             <li>
-                <a href="">b</a>
-            </li>
-            <li>
-                <a href="">c</a>
+                <a href=""><?php include_once "ficheros/eliminarDirectorio.php";?></a>
             </li>
             <li>
                 <a href="">d</a>
@@ -57,7 +58,7 @@ session_start();
         <h1>
             Admin Panel
         </h1>
-        <p>This is an example</p>
+        <p><?php include_once "prueba.php" ?></p>
         <input type="text">
     </div>
     

@@ -12,3 +12,4 @@ Archivos
 4. Elminar archivos
 
 
+Ficheros/creardirectorios: funciona
