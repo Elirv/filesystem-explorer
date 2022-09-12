@@ -35,6 +35,23 @@ session_start();
             </li>
         </ul>
     </aside>
+    
+    <aside class="right">
+        <ul>
+            <li>
+                <a href="">x</a>
+            </li>
+            <li>
+                <a href="">y</a>
+            </li>
+            <li>
+                <a href="">z</a>
+            </li>
+            <li>
+                <a href="">d</a>
+            </li>
+        </ul>
+    </aside>
 
     <div class="content">
         <h1>
@@ -50,10 +67,7 @@ session_start();
 $goPrueba = "prueba.php";
 if(isset($_SESSION["user"])){
     include_once($goPrueba);
-<<<<<<< HEAD
-=======
   
->>>>>>> tony
 
 }else{
     header("location: inicio.php");

@@ -50,3 +50,13 @@ ul li a:hover{
     margin-left: 20%;
     margin-top: 5%;
 }
+
+.right{
+    background-color: #424a5b;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    padding-top: 5%;
+    /* text-align: center; */
+    right: 0%;
+}
