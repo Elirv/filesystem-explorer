@@ -1,6 +1,6 @@
 <?php
 function Eliminar($ruta){
-    foreach(glob($ruta . "/") as $elemento){
+    foreach(glob($ruta . "/*") as $elemento){
         if (is_dir($elemento)){
             Eliminar($elemento);
         } else{
