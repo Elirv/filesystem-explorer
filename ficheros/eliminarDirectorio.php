@@ -36,9 +36,10 @@ if(isset($_POST["eliminar"])){
 <body>
     <strong <?php echo $msg ?>></strong>
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
-        <label>Ruta del directorio</label>
+        <label>Eliminar directorio</label>
         <input type="text"  name="ruta">
         <input type="hidden" name="eliminar">
+        <br>
         <input type="submit" value="Delete">
 
     </form>

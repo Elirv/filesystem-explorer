@@ -8,10 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="close_session.php">Sign off</a>
+   
     <input type="search">
-    <!-- <p>Welcome <?php echo "$myUser"; ?> </p> -->
-    <p>Welcome <?php echo $myUser ?> </p>
     <form class="" action="datosImg.php" method="post" enctype="multipart/form-data">
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">

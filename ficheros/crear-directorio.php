@@ -31,7 +31,7 @@ if(isset($_POST["directorio"])){
     <title>Document</title>
 </head>
 <body>
-    <h3>Crear directorios con PHP</h3>
+    <!-- <h3>Crear directorios con PHP</h3> -->
     <p><?php echo $msg ?></p>
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"] ?>">
     <table>

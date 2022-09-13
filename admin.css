@@ -23,6 +23,13 @@ a, a:hover{
     float: right;
     padding-right: 30px;
 }
+.btn{
+    background-color: blue!important;
+    color: white!important;
+    width: 70px!important;
+    height: 40px!important;
+    text-align: center!important;
+}
 
 ul{
     background-color: #424a5b;
@@ -64,4 +71,16 @@ ul li a:hover{
     padding-top: 5%;
     /* text-align: center; */
     right: 0%;
+}
+
+.logoPanel{
+   border-radius: 50%;
+}
+
+/* .buscador{
+    height: 10%!important;
+} */
+
+.search{
+    height: 10px;
 }
