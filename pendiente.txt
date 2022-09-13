@@ -15,3 +15,12 @@ Archivos
 Ficheros/creardirectorios: funciona
 
 Se pueden subir imagenes y pdf
+
+
+Modificar directorios
+Navegar entre directorios
+Buscar directorios
+Mostrar información de archivos y directorios (fecha de creación, útlima modificación, extensión, tamaño (menos de 1MB show KB))
+Mostrar iconos
+Visualizar imagenes
+Reproducir videos y audios
