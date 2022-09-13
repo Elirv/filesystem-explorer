@@ -56,7 +56,11 @@ session_start();
                 <!--<img src="assets/img/audio_film_media_music_social_video_youtube_icon_123741.png">--><a href="ficheros/videos.php">MyVideos</a>
             </li>
             <li>
+<<<<<<< HEAD
                 <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
+=======
+                <img src="assets/img/trash_can_29441.png"><a href="ficheros/delete.php">Trash</a>
+>>>>>>> b4020bdbebe9ad703eb789f0936b16f43126624f
             </li>
         </ul>
     </aside>
