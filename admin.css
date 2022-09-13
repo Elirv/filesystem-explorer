@@ -18,7 +18,7 @@ a, a:hover{
     float: right;
     padding-right: 30px;
 }
-.btn{
+.btn-primary{
     background-color: blue!important;
     color: white!important;
     width: 70px!important;

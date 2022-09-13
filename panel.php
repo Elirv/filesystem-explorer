@@ -33,7 +33,9 @@ session_start();
         
         
         <ul>
-           
+            <li>
+                <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
+            </li>
             <li>
                 <a href="ficheros/crear-directorio.php">New</a>
             </li>
@@ -44,6 +46,7 @@ session_start();
             <li>
                 <a href="ficheros/crear-archivos.php">Crear fichero</a>
             </li>
+<<<<<<< HEAD
             <li>
                 <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
             </li>
@@ -55,6 +58,9 @@ session_start();
             </li>
             <li>
                 <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
+=======
+                <a href="prueba.php">Subir</a>
+>>>>>>> 7bdee612e75ac72d33cf3b53a6492d196080dcd6
             </li>
         </ul>
     </aside>
