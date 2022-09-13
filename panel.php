@@ -74,7 +74,7 @@ session_start();
         </h1>
         <?php $thefolder = "./ficheros/root/images/";
 if ($handler = opendir($thefolder)) {
-	echo "<ul>";
+	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
             echo "<li>$file</li>";
     }
