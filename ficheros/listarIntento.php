@@ -12,7 +12,7 @@ while($elemento = readdir($directorio)){
         // echo"adios";
     }
     }
-} closedir($directorio);
+}
 
 ?>
 
