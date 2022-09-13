@@ -34,7 +34,7 @@ $subido = move_uploaded_file($archivo, $destino);
 
 if($subido){
     echo "subido exitosamente <br/>";
-    echo "<img src='ficheros/" . $nombre ."'>";
+    echo "<img src='ficheros/root/images/" . $nombre ."'>";
 }else{
     echo "no subido";
 }

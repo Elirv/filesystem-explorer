@@ -46,7 +46,6 @@ session_start();
             <li>
                 <a href="ficheros/crear-archivos.php">Crear fichero</a>
             </li>
-<<<<<<< HEAD
             <li>
                 <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
             </li>
@@ -58,9 +57,6 @@ session_start();
             </li>
             <li>
                 <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
-=======
-                <a href="prueba.php">Subir</a>
->>>>>>> 7bdee612e75ac72d33cf3b53a6492d196080dcd6
             </li>
         </ul>
     </aside>
@@ -86,6 +82,15 @@ session_start();
         <h1>
             Admin Panel
         </h1>
+        <?php$thefolder = "./ficheros/root/images/";
+if ($handler = opendir($thefolder)) {
+	echo "<ul>";
+    while (false !== ($file = readdir($handler))) {
+            echo "<li>$file</li>";
+    }
+    echo "</ul>";
+    closedir($handler);
+}?>
         <!-- <p><?php include_once "prueba.php" ?></p> 
     <?   $directorio = "ficheros/archivos/";
             $ficheros1  = scandir($directorio);
