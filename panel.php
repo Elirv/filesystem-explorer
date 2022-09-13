@@ -46,7 +46,6 @@ session_start();
             <li>
                 <a href="ficheros/crear-archivos.php">Crear fichero</a>
             </li>
-<<<<<<< HEAD
             <li>
                 <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
             </li>
@@ -57,10 +56,7 @@ session_start();
                 <!--<img src="assets/img/audio_film_media_music_social_video_youtube_icon_123741.png">--><a href="ficheros/videos.php">MyVideos</a>
             </li>
             <li>
-                <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
-=======
-                <a href="prueba.php">Subir</a>
->>>>>>> 7bdee612e75ac72d33cf3b53a6492d196080dcd6
+                <img src="assets/img/trash_can_29441.png"><a href="ficheros/delete.php">Trash</a>
             </li>
         </ul>
     </aside>
