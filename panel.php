@@ -61,7 +61,7 @@ session_start();
         <input type="text">
     </div>
     
-  
+
 
 <?php
 $goPrueba = "prueba.php";
