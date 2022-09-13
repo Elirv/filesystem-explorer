@@ -33,7 +33,9 @@ session_start();
         
         
         <ul>
-           
+            <li>
+                <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
+            </li>
             <li>
                 <a href="ficheros/crear-directorio.php">Crear directorio</a>
             </li>
@@ -44,7 +46,6 @@ session_start();
             <li>
                 <a href="ficheros/directorios.php">Crear fichero</a>
             </li>
-            li>
                 <a href="prueba.php">Subir</a>
             </li>
         </ul>
