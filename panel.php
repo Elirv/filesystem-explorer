@@ -37,13 +37,6 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
             </li>
             <li>
-                <a href="ficheros/crear-directorio.php">New</a>
-            </li>
-            
-            <li>
-                <a href="ficheros/eliminarDirectorio.php">Eliminar directorio</a>
-            </li>
-            <li>
                 <a href="ficheros/crear-archivos.php">Crear fichero</a>
             </li>
             <li>
@@ -56,11 +49,7 @@ session_start();
                 <!--<img src="assets/img/audio_film_media_music_social_video_youtube_icon_123741.png">--><a href="ficheros/videos.php">MyVideos</a>
             </li>
             <li>
-<<<<<<< HEAD
-                <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
-=======
-                <img src="assets/img/trash_can_29441.png"><a href="ficheros/delete.php">Trash</a>
->>>>>>> b4020bdbebe9ad703eb789f0936b16f43126624f
+                <a href="./ficheros/eliminarDirectorio.php/"><img src="assets/img/trash_can_29441.png"></a>
             </li>
         </ul>
     </aside>
