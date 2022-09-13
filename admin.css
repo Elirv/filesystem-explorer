@@ -9,11 +9,6 @@
     padding-left: 30px;
 }
 
-body{
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 a, a:hover{
     text-decoration: none!important;
@@ -33,7 +28,7 @@ a, a:hover{
 
 ul{
     background-color: #424a5b;
-    width: 106%;
+    width: 16%;
     height: 100%;
     position: fixed;
     padding-top: 5%;
@@ -83,4 +78,9 @@ ul li a:hover{
 
 .search{
     height: 10px;
+}
+
+
+.imagen-icono{
+    width: 10px;
 }

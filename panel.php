@@ -35,17 +35,26 @@ session_start();
         <ul>
            
             <li>
-                <a href="ficheros/crear-directorio.php">Crear directorio</a>
+                <a href="ficheros/crear-directorio.php">New</a>
             </li>
             
             <li>
                 <a href="ficheros/eliminarDirectorio.php">Eliminar directorio</a>
             </li>
             <li>
-                <a href="ficheros/directorios.php">Crear fichero</a>
+                <a href="ficheros/crear-archivos.php">Crear fichero</a>
             </li>
-            li>
-                <a href="prueba.php">Subir</a>
+            <li>
+                <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
+            </li>
+            <li>
+                <!--<img src="assets/img/note_audio_music_3097.png">--><a href="ficheros/subirAudios.php">MyMusic</a>
+            </li>
+            <li>
+                <!--<img src="assets/img/audio_film_media_music_social_video_youtube_icon_123741.png">--><a href="ficheros/videos.php">MyVideos</a>
+            </li>
+            <li>
+                <img src="assets/img/trash_can_29441.png"><a href="">Trash</a>
             </li>
         </ul>
     </aside>
@@ -71,8 +80,13 @@ session_start();
         <h1>
             Admin Panel
         </h1>
-        <!-- <p><?php include_once "prueba.php" ?></p> -->
-       
+        <!-- <p><?php include_once "prueba.php" ?></p> 
+    <?   $directorio = "ficheros/archivos/";
+            $ficheros1  = scandir($directorio);
+            $ficheros2  = scandir($directorio, 1);
+            print_r($ficheros1);
+            print_r($ficheros2);
+            echo "hola"?> -->
     </div>
     
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,5 +40,43 @@
             </td>
         </tr>
     </table>
+</body>
+</html> -->
+<!-- <?php
+$dir = "ficheros/";
+
+// Sort in ascending order - this is default
+$a = scandir($dir);
+
+// Sort in descending order
+$b = scandir($dir,1);
+
+print_r($a);
+print_r($b);
+?> -->
+<?php
+$dir = "ficheros/archivos/";
+ 
+// Abre un directorio conocido, y procede a leer el contenido
+if (is_dir($dir)) {
+    if ($dh = opendir($dir)) {
+        while (($file = readdir($dh)) !== false) {
+            echo "nombre archivo: $file : tipo archivo: " . filetype($dir . $file) . "\n";
+        }
+        closedir($dh);
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hola</h1>
+    <p><?php echo scandir($dir,1)?></p>
 </body>
 </html>

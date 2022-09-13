@@ -28,13 +28,13 @@ $fileextension= strtolower($fileextension);
 
 
 if (isset($name)) {
-    $path= 'archivos/';
+    $path= 'root/videos/s';
     if (empty($name)){
         echo "Please choose a file";
     }else if (!empty($name)){
-        if (($fileextension !== "mp3") && ($fileextension !== "ogg") && ($fileextension !== "webm")){
-        echo "The file extension must be .mp3, .ogg, or .webm in order to be uploaded";
-    }else if (($fileextension == "mp3") || ($fileextension == "ogg") || ($fileextension == "webm")){
+        if (($fileextension !== "mp4") && ($fileextension !== "ogg") && ($fileextension !== "webm")){
+        echo "The file extension must be .mp4, .ogg, or .webm in order to be uploaded";
+    }else if (($fileextension == "mp4") || ($fileextension == "ogg") || ($fileextension == "webm")){
         if (move_uploaded_file($tmp_name, $path.$name)) {
         echo 'Uploaded!';
         }
