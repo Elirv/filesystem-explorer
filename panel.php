@@ -72,15 +72,16 @@ session_start();
         <h1>
             Admin Panel
         </h1>
-        <?php $thefolder = "./ficheros/root/images/";
+        <?php $thefolder = "./ficheros/root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
             echo "<li>$file</li>";
     }
-    echo "</ul>";
+    echo "</ol>";
     closedir($handler);
-}?>
+}
+?>
       
     </div>
     

@@ -3,7 +3,8 @@ $msg = null;
 
 if(isset($_POST["directorio"])){
     $carpeta = htmlspecialchars($_POST["carpeta"]);
-    $ruta = htmlspecialchars($_POST["ruta"]);
+    // $ruta = htmlspecialchars($_POST["ruta"]);
+    $ruta = 'root/userFolders/';
     $directorio = $ruta . $carpeta;
 
     if(!is_dir($directorio)){
