@@ -37,9 +37,6 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
             </li>
             <li>
-                <a href="ficheros/crear-archivos.php">Crear fichero</a>
-            </li>
-            <li>
                 <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
             </li>
             <li>
