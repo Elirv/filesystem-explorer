@@ -44,9 +44,13 @@ session_start();
             <li>
                 <a href="ficheros/directorios.php">Crear fichero</a>
             </li>
-            li>
-                <a href="prueba.php">Subir</a>
+                <a href="prueba.php">Subir img/file
+                </a>
             </li>
+            <li>
+                <a href="ficheros/videos.php">Subir videos/audios</a>
+            </li> 
+            
         </ul>
     </aside>
     
@@ -75,7 +79,7 @@ session_start();
        
     </div>
     
-  
+
 
 <!-- <?php
 $goPrueba = "prueba.php";

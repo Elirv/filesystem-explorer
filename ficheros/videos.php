@@ -19,7 +19,7 @@
 </html>
 
 <?php 
-
+error_reporting(0);
 $name= $_FILES['file']['name'];
 $tmp_name= $_FILES['file']['tmp_name'];
 $position= strpos($name, ".");
@@ -43,4 +43,7 @@ if (isset($name)) {
 }
 
 
+
+
 ?>
+

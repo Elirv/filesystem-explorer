@@ -7,25 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action=""method="post">
-        <input type="file" name="uploadfile">
-        <input type="submit" value="Subir">
-    </form>
+
+
+<form action="videos.php" method='post' enctype="multipart/form-data">
+<input type="file" name="file"/><br><br>
+<input type="submit" value="Upload"/>
+</form>
+
 
 </body>
 </html>
-
-<?php
-
-define("NAX_SIZE", "500");
-
-function getExtension($str){
-    $I = strops;
-    if{
-        return
-    }
-}
-
-echo "hello";
-
-?>

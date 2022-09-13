@@ -7,7 +7,12 @@
     background-color: skyblue;
     line-height: 70px;
     padding-left: 30px;
+}
 
+body{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 a, a:hover{
@@ -76,6 +81,6 @@ ul li a:hover{
     height: 10%!important;
 } */
 
-.search{
+/* .search{
     height: 10px;
-}
+} */
