@@ -37,13 +37,13 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
             </li>
             <li>
-                <!-- <img class="imagen-icono" src="assets/img/xlarge_icons_image_photo_3885.png"> --><a href="imagen.php">MyPhotos</a>
+                <a href="imagen.php">MyPhotos</a>
             </li>
             <li>
-                <!--<img src="assets/img/note_audio_music_3097.png">--><a href="ficheros/subirAudios.php">MyMusic</a>
+                <a href="ficheros/subirAudios.php">MyMusic</a>
             </li>
             <li>
-                <!--<img src="assets/img/audio_film_media_music_social_video_youtube_icon_123741.png">--><a href="ficheros/videos.php">MyVideos</a>
+                <a href="ficheros/videos.php">MyVideos</a>
             </li>
             <li>
                 <a href="./ficheros/eliminarDirectorio.php/"><img src="assets/img/trash_can_29441.png"></a>
@@ -81,30 +81,12 @@ if ($handler = opendir($thefolder)) {
     echo "</ul>";
     closedir($handler);
 }?>
-        <!-- <p><?php include_once "prueba.php" ?></p> 
-    <?   $directorio = "ficheros/archivos/";
-            $ficheros1  = scandir($directorio);
-            $ficheros2  = scandir($directorio, 1);
-            print_r($ficheros1);
-            print_r($ficheros2);
-            echo "hola"?> -->
+      
     </div>
     
 
 
-<!-- <?php
-$goPrueba = "prueba.php";
-if(isset($_SESSION["user"])){
-    include_once($goPrueba);
-  
 
-}else{
-    header("location: inicio.php");
-}
-
-?> -->
-
-<br>
 
 </body>
 </html>
