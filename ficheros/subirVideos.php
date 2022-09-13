@@ -26,6 +26,6 @@ function getExtension($str){
     }
 }
 
-
+echo "hello";
 
 ?>
