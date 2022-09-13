@@ -10,13 +10,23 @@ session_start();
     <title>Document</title>
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/838d940042.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header"> 
         <img class="logoPanel" src="./assets/img/cloudSimpsons.png" alt="" width="60" height="60">
+        
         <div class="logout">
-         <a href="close_session.php" class="btn btn-primary">Logout</a>
+            <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
+
+        
+        <form class="buscador" action="index.html" method="post"> 
+          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
+        </form>
+      </div>
+   
+        
     </header>
 
     <aside>
@@ -25,14 +35,17 @@ session_start();
         <ul>
            
             <li>
-                <a href=""><?php include_once "ficheros/crear-directorio.php";?></a>
+                <a href="ficheros/crear-directorio.php">Crear directorio</a>
             </li>
             
             <li>
-                <a href=""><?php include_once "ficheros/eliminarDirectorio.php";?></a>
+                <a href="ficheros/eliminarDirectorio.php">Eliminar directorio</a>
             </li>
             <li>
-                <a href="">d</a>
+                <a href="ficheros/directorios.php">Crear fichero</a>
+            </li>
+            li>
+                <a href="prueba.php">Subir</a>
             </li>
         </ul>
     </aside>
@@ -58,13 +71,13 @@ session_start();
         <h1>
             Admin Panel
         </h1>
-        <p><?php include_once "prueba.php" ?></p>
-        <input type="text">
+        <!-- <p><?php include_once "prueba.php" ?></p> -->
+       
     </div>
     
   
 
-<?php
+<!-- <?php
 $goPrueba = "prueba.php";
 if(isset($_SESSION["user"])){
     include_once($goPrueba);
@@ -74,7 +87,7 @@ if(isset($_SESSION["user"])){
     header("location: inicio.php");
 }
 
-?>
+?> -->
 
 <br>
 
