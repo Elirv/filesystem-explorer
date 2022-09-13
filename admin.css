@@ -7,7 +7,12 @@
     background-color: skyblue;
     line-height: 70px;
     padding-left: 30px;
+}
 
+body{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 a, a:hover{
@@ -21,7 +26,7 @@ a, a:hover{
 
 ul{
     background-color: #424a5b;
-    width: 16%;
+    width: 106%;
     height: 100%;
     position: fixed;
     padding-top: 5%;
