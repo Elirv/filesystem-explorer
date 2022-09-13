@@ -25,9 +25,9 @@
     </form>
     <?php
 if(isset($_POST["deleteNew"])){
-    if ($_POST["delete"] =="File"){
+    if ($_POST["delete"] !="File"){
        
-        header("Location: crear-directorio.php");
+        header("Location: eliminarDirectorio.php");
     } else{
         header("Location: eliminarDirectorio.php");
     }
