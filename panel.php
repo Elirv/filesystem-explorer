@@ -24,10 +24,9 @@ session_start();
             <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
 
-        
-        <form class="buscador" action="index.html" method="post"> 
+
           <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
-        </form>
+        
       </div>
    
         
