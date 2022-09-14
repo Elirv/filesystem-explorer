@@ -41,7 +41,7 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW +</a>
             </li>
             <li>
-                <a href="ficheros/root"><img src="./assets/img/icons/imageUser.ico" alt="" style="height:30px">My Directories</a>
+                <a href="./ficheros/misArchivos.php"><img src="./assets/img/icons/imageUser.ico" alt="" style="height:30px">My Directories</a>
             </li>
             </li>
             <li>
