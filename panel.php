@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +35,7 @@ session_start();
         
         <ul>
             <li>
-                <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW +</a>
+                <a class="btn btn-light" href="./ficheros/creation.php" role="button">NEW +</a>
             </li>
             <li>
                 <a href="./ficheros/misArchivos.php"><img src="./assets/img/icons/imageUser.ico" alt="" style="height:30px">My Directories</a>
