@@ -67,8 +67,9 @@ ul li a:hover{
     height: 100%;
     position: fixed;
     padding-top: 5%;
-    /* text-align: center; */
+    text-align: center!important;
     right: 0%;
+    color: white!important;
 }
 
 .logoPanel{
@@ -91,3 +92,6 @@ ul li a:hover{
     align-items: left;
 } */
 
+h1{
+    color: #4797ca;
+}

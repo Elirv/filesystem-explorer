@@ -56,31 +56,19 @@ session_start();
     </aside>
     
     <aside class="right">
-        <ul>
-            <li>
-                <a href="">x</a>
-            </li>
-            <li>
-                <a href="">y</a>
-            </li>
-            <li>
-                <a href="">z</a>
-            </li>
-            <li>
-                <a href="">d</a>
-            </li>
-        </ul>
+       <p style="text-align:center; color:white; padding-left:20px; padding-right: 20px">See the characterics of your diferent folders and documentes here. </p>
     </aside>
 
     <div class="content">
         <h1>
             Admin Panel
         </h1>
-        <p>This is yours</p>
+        <p>Your repository is currently empty .</p>
+        <p> Remember you can create folders and files or upload its.</p>
 
 
         <?php
-include(listarIntento.php);
+// include_once "./ficheros/archivos";
 $lista = null;
 $directorio = opendir("./ficheros/root/userFolders/");
 while($elemento = readdir($directorio)){
