@@ -1,6 +1,6 @@
 <?php
 function Eliminar($ruta){
-    foreach(glob($ruta . "/") as $elemento){
+    foreach(glob($ruta . "/*") as $elemento){
         if (is_dir($elemento)){
             Eliminar($elemento);
         } else{
@@ -36,11 +36,11 @@ if(isset($_POST["eliminar"])){
 <body>
     <strong <?php echo $msg ?>></strong>
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
-        <label>Ruta del directorio</label>
+        <label>What do you want to delete?</label>
         <input type="text"  name="ruta">
         <input type="hidden" name="eliminar">
+        <br>
         <input type="submit" value="Delete">
-
     </form>
 </body>
 </html>

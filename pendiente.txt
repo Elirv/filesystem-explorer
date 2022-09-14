@@ -12,3 +12,7 @@ Archivos
 4. Elminar archivos
 
 
+Ficheros/creardirectorios: funciona
+
+Se pueden subir imagenes y pdf
+mirar borrar archivos desde trash
