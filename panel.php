@@ -23,10 +23,7 @@ session_start();
         <div class="logout">
             <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
-
-
-          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px; margin-left: 30px" type="text" name="" value="" placeholder="&#xf002;">
-        
+          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px; margin-left: 30px" type="text" name="" value="" placeholder=" &#xf002;                 f i n d ">  
       </div>
    
         
@@ -81,19 +78,9 @@ session_start();
         </h1>
 
 
-       
-            
-
-
-
-
-        </div>
  
 
-
-
-
-    <?php $thefolder = "./ficheros/root/userFolders/";
+    <?php $thefolder = "./root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
