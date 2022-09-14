@@ -41,17 +41,17 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW +</a>
             </li>
             <li>
-                <a class="btn btn-light" href="imagen.php" role="button">UPLOAD</a>
+                <a href="ficheros/root"><img src="./assets/img/icons/imageUser.ico" alt="" style="height:30px">My Directories</a>
             </li>
             </li>
             <li>
-                <a href="imagen.php">MyPhotos</a>
+                <a href="imagen.php"><img src="./assets/img/icons/imageIco.ico" alt="" style="height:30px">My Photos</a>
             </li>
             <li>
-                <a href="ficheros/subirAudios.php">MyMusic</a>
+                <a href="./ficheros/subirAudios.php"><img src="./assets/img/icons/musicIco.ico" alt="" style="height:30px">My Music</a>
             </li>
             <li>
-                <a href="ficheros/videos.php">MyVideos</a>
+                <a href="ficheros/videos.php"><img src="./assets/img/icons/videoIco.ico" alt="" style="height:30px">My Videos</a>
             </li>
             <li>
                 <a href="./ficheros/eliminarDirectorio.php/"><img src="assets/img/trash_can_29441.png"></a>
