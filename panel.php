@@ -25,7 +25,7 @@ session_start();
         </div>
 
 
-          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
+          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px; margin-left: 30px" type="text" name="" value="" placeholder="&#xf002;">
         
       </div>
    
