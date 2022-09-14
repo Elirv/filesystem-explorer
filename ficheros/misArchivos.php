@@ -28,7 +28,7 @@ $fileextension= strtolower($fileextension);
 
 
 if (isset($name)) {
-    $path= 'root/userFolder/';
+    $path= './root/userFolder';
     if (empty($name)){
         echo "Please choose a file";
     }else if (!empty($name)){
