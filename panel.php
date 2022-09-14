@@ -79,9 +79,32 @@ session_start();
         <p>This is yours</p>
 
 
- 
+        <?php
 
-    <?php $thefolder = "./root/userFolders/";
+$lista = null;
+$directorio = opendir("./ficheros/root/userFolders/");
+while($elemento = readdir($directorio)){
+    if ($elemento != '.' && $elemento != '..'){
+    if (is_dir("archivos/" . $elemento)){
+        $lista = $lista . "<li><a href='archivos/$elemento' target='_blank'</a>$elemento/</li>";
+        // echo"hola";
+    }else{
+        $lista = $lista . "<li><a href='archivos/$elemento' target='_blank'</a>$elemento</li>";
+        // echo"adios";
+    }
+    }
+}
+
+?>
+
+
+
+
+
+
+
+
+    <!-- <?php $thefolder = "./ficheros/root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
@@ -90,7 +113,7 @@ if ($handler = opendir($thefolder)) {
     echo "</ol>";
     closedir($handler);
 }
-?>
+?> -->
       
     </div>
 
