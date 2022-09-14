@@ -1,51 +1,4 @@
 <?php
-function Eliminar($ruta){
-    foreach(glob($ruta . "/*") as $elemento){
-        if (is_dir($elemento)){
-            Eliminar($elemento);
-        } else{
-            unlink($elemento);
-
-        }
-    }
-    rmdir($ruta);
-
-}
-
-$msg = null;
-
-if(isset($_POST["eliminar"])){
-    $ruta = htmlspecialchars($_POST["ruta"]);
-    if(is_dir($ruta)){
-        Eliminar($ruta);
-        $msg = "Congratulations! The directory been deleted";
-    }else{
-        $msg = "The directory not exits";
-    }
-}
-?>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <strong <?php echo $msg ?>></strong>
-    <form method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
-        <label>What do you want to delete?</label>
-        <input type="text"  name="ruta">
-        <input type="hidden" name="eliminar">
-        <br>
-        <input type="submit" value="Delete">
-    </form>
-</body>
-</html> -->
-
-<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -89,7 +42,7 @@ session_start();
             </li>
             <li>
             <div id="liveAlertPlaceholder"></div>
-            <button type="button" class="btn btn-primary" id="liveAlertBtn" href="./ficheros/creation.php">NEW</button>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn" href="../ficheros/creation.php">NEW</button>
             <script>
                 
     const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -136,7 +89,7 @@ if (alertTrigger) {
                 <a href="ficheros/videos.php">MyVideos</a>
             </li>
             <li>
-                <a href="./ficheros/eliminarDirectorio.php/"><img src="assets/img/trash_can_29441.png"></a>
+                <a href="./ficheros/eliminarDirectorio.php/"><img src="../assets/img/trash_can_29441.png"></a>
             </li>
         </ul>
     </aside>
@@ -162,18 +115,46 @@ if (alertTrigger) {
         <h1>
             Admin Panel
         </h1>
-
-
-       
-            
-
-
-
-
+        <strong <?php echo $msg ?>></strong>
+    <form method="post" action="<?php echo $_SERVER["PHP_SELF"]?>">
+        <label>What do you want to delete?</label>
+        <input type="text"  name="ruta">
+        <input type="hidden" name="eliminar">
+        <br>
+        <input type="submit" value="Delete">
+    </form>
         </div>
- 
-
     </div>
-
 </body>
 </html>
+
+<?php
+function Eliminar($ruta){
+    foreach(glob($ruta . "/*") as $elemento){
+        if (is_dir($elemento)){
+            Eliminar($elemento);
+        } else{
+            unlink($elemento);
+
+        }
+    }
+    rmdir($ruta);
+
+}
+
+$msg = null;
+
+if(isset($_POST["eliminar"])){
+    $ruta = htmlspecialchars($_POST["ruta"]);
+    if(is_dir($ruta)){
+        Eliminar($ruta);
+        $msg = "Congratulations! The directory been deleted";
+    }else{
+        $msg = "The directory not exits";
+    }
+}
+?>
+
+
+
+

@@ -18,47 +18,42 @@ session_start();
 </head>
 <body>
     <header class="header"> 
-        <img class="logoPanel" src="./assets/img/cloudSimpsons.png" alt="" width="60" height="60">
+        <img class="logoPanel" src="../assets/img/cloudSimpsons.png" alt="" width="60" height="60">
         
         <div class="logout">
             <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
-
         
         <form class="buscador" action="index.html" method="post"> 
-          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
+        <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
         </form>
-      </div>
-   
+    </div>
+
         
     </header>
-
     <aside>
         
         
         <ul>
             <li>
-                <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
+                <a class="btn btn-light" href="./creation.php" role="button">NEW+</a>
             </li>
             <li>
             <div id="liveAlertPlaceholder"></div>
-            <button type="button" class="btn btn-primary" id="liveAlertBtn" href="./ficheros/creation.php">NEW</button>
-
-
-
+            
         <div class="toShow">
             </li>
             <li>
-                <a href="imagen.php">MyPhotos</a>
+                <a href="./imagen.php">MyPhotos</a>
             </li>
             <li>
-                <a href="ficheros/subirAudios.php">MyMusic</a>
+                <a href="./subirAudios.php">MyMusic</a>
             </li>
             <li>
-                <a href="ficheros/videos.php">MyVideos</a>
+                <a href="./videos.php">MyVideos</a>
             </li>
             <li>
-                <a href="./ficheros/eliminarDirectorio.php/"><img src="assets/img/trash_can_29441.png"></a>
+                <a href="./eliminarDirectorio.php/"><img src="../assets/img/trash_can_29441.png"></a>
             </li>
         </ul>
     </aside>
@@ -79,13 +74,10 @@ session_start();
             </li>
         </ul>
     </aside>
-
     <div class="content">
         <h1>
             Admin Panel
         </h1>
-
-
         <h2>What do you want to create?</h2>
 <form action="creation.php" method="post">
 <fieldset>
@@ -100,7 +92,6 @@ session_start();
 <?php
 if(isset($_POST["submitNew"])){
 if ($_POST["creation"] !="File"){
-   
     header("Location: crear-directorio.php");
 } else{
     header("Location: crear-archivos.php");
@@ -110,55 +101,3 @@ if ($_POST["creation"] !="File"){
     </div>
 </body>
 </html>
-
-
-<!-- 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>What do you want to create?</h2>
-
-    <form action="creation.php" method="post">
-    <fieldset>
-        <legend>Select:</legend>
-
-        <select name="creation" id="">
-            <option value="File">File</option>
-            <option value="Directory">Directory</option>
-        </select>
-        <input type="submit" name="submitNew">
-
-  
-
-        </fieldset>
-    </form>
-    <!-- <?php
-if(isset($_POST["submitNew"])){
-    if ($_POST["creation"] !="File"){
-       
-        header("Location: crear-directorio.php");
-    } else{
-        header("Location: crear-archivos.php");
-    }
-} 
-
-
-
-?> -->
- </form>
-</body>
-</html>
-
-
-
-
-
-

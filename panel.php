@@ -19,19 +19,14 @@ session_start();
         <div class="logout">
             <a href="close_session.php" class="btn btn-primary">Logout</a>
         </div>
-
         
         <form class="buscador" action="index.html" method="post"> 
-          <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
+        <input class="search" id="search" style="font-family: 'Font Awesome 5 Free'; font-weight: 700; height:30px" type="text" name="" value="" placeholder="&#xf002;">
         </form>
-      </div>
-   
+    </div>
         
     </header>
-
     <aside>
-        
-        
         <ul>
             <li>
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
@@ -50,7 +45,6 @@ session_start();
             </li>
         </ul>
     </aside>
-    
     <aside class="right">
         <ul>
             <li>
@@ -67,38 +61,17 @@ session_start();
             </li>
         </ul>
     </aside>
-
     <div class="content">
         <h1>
-            Admin Panel
+            
         </h1>
 
         <div class="toShow">
         <!-- <php uploadOptions('./ficheros/root/userFolders') ?> -->
-
-
         </div>
- 
 
 
 
-
-        <!-- <?php $thefolder = "./ficheros/root/userFolders/";
-if ($handler = opendir($thefolder)) {
-	echo "<ol>";
-    while (false !== ($file = readdir($handler))) {
-            echo "<li>$file</li>";
-    }
-    echo "</ol>";
-    closedir($handler);
-}
-?> -->
-      
     </div>
-    
-
-
-
-
 </body>
 </html>
