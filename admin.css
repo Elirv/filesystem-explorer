@@ -54,8 +54,11 @@ ul li a:hover{
 
 
 .content{
-    margin-left: 20%;
+    margin-left: 16%;
+    margin-right: 16%;
     margin-top: 5%;
+  
+
 }
 
 .right{
@@ -85,4 +88,9 @@ ul li a:hover{
     width: 10px;
 }
 
+/* .toShow{
+    text-align: left;
+    width: 50%;
+    align-items: left;
+} */
 
