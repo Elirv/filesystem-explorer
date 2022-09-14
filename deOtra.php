@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    Hola
+    Hola, esto es otra prueba
 </body>
 </html>
