@@ -29,12 +29,6 @@ session_start();
         
     </header>
 
-<<<<<<< HEAD
-<?php
-$goPrueba = "prueba.php";
-if(isset($_SESSION["user"])){
-    include_once($goPrueba);
-=======
     <aside>
         
         
@@ -71,7 +65,6 @@ if(isset($_SESSION["user"])){
         </h1>
         <p>Your repository is currently empty .</p>
         <p> Remember you can create folders and files or upload its.</p>
->>>>>>> otra
 
 
         <?php
