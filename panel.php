@@ -32,7 +32,7 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
             </li>
             <li>
-                <a href="imagen.php">MyPhotos</a>
+                <a href="./imagen.php">MyPhotos</a>
             </li>
             <li>
                 <a href="ficheros/subirAudios.php">MyMusic</a>
@@ -65,13 +65,8 @@ session_start();
         <h1>
             
         </h1>
-
         <div class="toShow">
-        <!-- <php uploadOptions('./ficheros/root/userFolders') ?> -->
         </div>
-
-
-
     </div>
 </body>
 </html>

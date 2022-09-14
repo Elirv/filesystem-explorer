@@ -44,7 +44,7 @@ session_start();
         <div class="toShow">
             </li>
             <li>
-                <a href="./imagen.php">MyPhotos</a>
+                <a href="../imagen.php">MyPhotos</a>
             </li>
             <li>
                 <a href="./subirAudios.php">MyMusic</a>

@@ -52,7 +52,7 @@
         <ul>
         <?php $thefolder = "../ficheros/root/videos/";
         if ($handler = opendir($thefolder)) {
-	    echo "<ol>";
+    echo "<ol>";
         while (false !== ($file = readdir($handler))) {
             echo "<li>$file</li>";
     }
@@ -60,18 +60,6 @@
     closedir($handler);
 }
 ?> 
-            <!-- <li>
-                <a href="">x</a>
-            </li>
-            <li>
-                <a href="">y</a>
-            </li>
-            <li>
-                <a href="">z</a>
-            </li>
-            <li>
-                <a href="">d</a>
-            </li> -->
         </ul>
     </aside>
 
@@ -85,15 +73,7 @@
 <input type="file" name="file"/><br><br>
 <input type="submit" value="Upload"/>
 </form>
-
         </div>
- 
-
-
-
-
-
-      
     </div>
 
 <?php 
