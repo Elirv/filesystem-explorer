@@ -1,6 +1,6 @@
 <?php
 $msg = null;
-
+$GLOBALS["msg"];
 if(isset($_POST["directorio"])){
     $carpeta = htmlspecialchars($_POST["carpeta"]);
     // $ruta = htmlspecialchars($_POST["ruta"]);

@@ -8,6 +8,10 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/838d940042.js" crossorigin="anonymous"></script>
@@ -38,7 +42,40 @@ session_start();
             </li>
             <li>
             <div id="liveAlertPlaceholder"></div>
-<button type="button" class="btn btn-primary" id="liveAlertBtn" href="./ficheros/creation.php">NEW</button>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn" href="./ficheros/creation.php">NEW</button>
+            <script>
+                
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert( '<?php $ruta = "./ficheros/creation.php";
+    echo $ruta;
+    while ($ruta = fgets($fichero_url, 1024)){
+        $texto .= $ruta;
+     }
+     return $texto;
+  
+
+    ?>', 'success')
+  })
+}
+
+</script>
+
 
         <div class="toShow">
             </li>
@@ -83,15 +120,7 @@ session_start();
        
             
 
-        <?php
-$fichero = './ficheros/archivos/otro.txt';
-// Abre el fichero para obtener el contenido existente
-$actual = file_get_contents($fichero);
-// Añade una nueva persona al fichero
-$actual .= "John Smith\n";
-// Escribe el contenido al fichero
-file_put_contents($fichero, $actual);
-?>
+
 
 
         </div>
@@ -100,7 +129,7 @@ file_put_contents($fichero, $actual);
 
 
 
-        <?php $thefolder = "./ficheros/root/userFolders/";
+    <?php $thefolder = "./ficheros/root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
@@ -112,11 +141,10 @@ if ($handler = opendir($thefolder)) {
 ?>
       
     </div>
-    
+
 
 
 
 
 </body>
-<script src="myjs.js"></script>
 </html>

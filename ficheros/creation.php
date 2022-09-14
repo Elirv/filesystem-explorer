@@ -7,13 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>What do you want to create?</h2>
+    <!-- <h2>What do you want to create?</h2> -->
 
     <form action="creation.php" method="post">
-    <fieldset>
+    <fieldset style="width: 16%">
         <legend>Select:</legend>
-
-        <select name="creation" id="">
+        <select name="creation" id="" style="width: 70%">
             <option value="File">File</option>
             <option value="Directory">Directory</option>
         </select>
