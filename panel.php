@@ -82,7 +82,7 @@ session_start();
         <?php
 
 $lista = null;
-$directorio = opendir("./ficheros/root/userFolders/");
+$directorio = opendir("./ficheros/root/userFolder/");
 while($elemento = readdir($directorio)){
     if ($elemento != '.' && $elemento != '..'){
     if (is_dir("archivos/" . $elemento)){
