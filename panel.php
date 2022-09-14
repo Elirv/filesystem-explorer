@@ -80,9 +80,9 @@ session_start();
 
 
         <?php
-
+include(listarIntento.php);
 $lista = null;
-$directorio = opendir("./ficheros/root/userFolder/");
+$directorio = opendir("./ficheros/root/userFolders/");
 while($elemento = readdir($directorio)){
     if ($elemento != '.' && $elemento != '..'){
     if (is_dir("archivos/" . $elemento)){
