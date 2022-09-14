@@ -37,6 +37,12 @@ session_start();
                 <a class="btn btn-light" href="ficheros/creation.php" role="button">NEW+</a>
             </li>
             <li>
+            <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn" href="./ficheros/creation.php">NEW</button>
+
+        <div class="toShow">
+            </li>
+            <li>
                 <a href="imagen.php">MyPhotos</a>
             </li>
             <li>
@@ -73,7 +79,10 @@ session_start();
             Admin Panel
         </h1>
 
-        <div class="toShow">
+
+       
+            
+
         <?php
 $fichero = './ficheros/archivos/otro.txt';
 // Abre el fichero para obtener el contenido existente
@@ -109,4 +118,5 @@ if ($handler = opendir($thefolder)) {
 
 
 </body>
+<script src="myjs.js"></script>
 </html>

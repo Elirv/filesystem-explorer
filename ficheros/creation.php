@@ -36,6 +36,8 @@ if(isset($_POST["submitNew"])){
 
 
 ?>
+
+
  </form>
 </body>
 </html>
