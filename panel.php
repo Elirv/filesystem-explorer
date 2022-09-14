@@ -74,15 +74,7 @@ session_start();
         </h1>
 
         <div class="toShow">
-        <?php
-$fichero = './ficheros/archivos/otro.txt';
-// Abre el fichero para obtener el contenido existente
-$actual = file_get_contents($fichero);
-// Añade una nueva persona al fichero
-$actual .= "John Smith\n";
-// Escribe el contenido al fichero
-file_put_contents($fichero, $actual);
-?>
+        <!-- <php uploadOptions('./ficheros/root/userFolders') ?> -->
 
 
         </div>
@@ -91,7 +83,7 @@ file_put_contents($fichero, $actual);
 
 
 
-        <?php $thefolder = "./ficheros/root/userFolders/";
+        <!-- <?php $thefolder = "./ficheros/root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
     while (false !== ($file = readdir($handler))) {
@@ -100,7 +92,7 @@ if ($handler = opendir($thefolder)) {
     echo "</ol>";
     closedir($handler);
 }
-?>
+?> -->
       
     </div>
     
