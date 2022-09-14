@@ -72,6 +72,19 @@ session_start();
         <h1>
             Admin Panel
         </h1>
+        <?php
+$fichero = './ficheros/archivos/otro.txt';
+// Abre el fichero para obtener el contenido existente
+$actual = file_get_contents($fichero);
+// Añade una nueva persona al fichero
+$actual .= "John Smith\n";
+// Escribe el contenido al fichero
+file_put_contents($fichero, $actual);
+?>
+
+
+
+
         <?php $thefolder = "./ficheros/root/userFolders/";
 if ($handler = opendir($thefolder)) {
 	echo "<ol>";
