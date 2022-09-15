@@ -64,7 +64,7 @@ error_reporting(0);
         <h1>
             Admin Panel
         </h1>
-        <p>Your repository is currently empty .</p>
+        <p>Your repository is currently empty.</p>
         <p> Remember you can create folders and files or upload its.</p>
 
 
